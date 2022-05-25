@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAT Space Program Launch Sequence</title>
+</head>
+<body>
+    <H1><b>Launch Sequence Countdown</b></H1>
+    <div style = "color:white">
+    <p id="DisplayCountdown"></p>
+
+    
+    <link rel="stylesheet" href="UATSpaceProgramLaunchSequence.css">
+
+    <script>
+      /*
+      George Thompson
+      5/20/22
+      Assignment: Efficiency at Mission Control
+      */
+
+  
+ let countdown = 0; //sets countdown variable to 0
+ let display = "" //creates display variable as undefined
+for (let start = 10; start > countdown; start--) { //creates the variable start and sets it at 10 also sets the loop
+//that if the start variable is greater than the countdown variable it decrements start by 1
+
+
+  display +=  "T-Minus " + start + "<br></br>"// return statement that the display variable is tminus and the start variable
+    //at that time and a line break before starting the loop over again
+
+   
+}
+
+document.getElementById("DisplayCountdown").innerHTML = display; //writes the display variable to the html file
+document.write("BLASTOFF"); //writes to the html file BLASTOFF after the loop is finished
+
+
+
+  </script>
+  </div>          
+</body>
+</html>
